@@ -1,7 +1,11 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "mcp-sudo"
 version = "1.0.0"
-description = "MCP server for running sudo commands with encrypted password storage."
+description = "MCP server for running sudo commands with encrypted password storage. Part of likezara™ MCP suite."
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Proprietary — © 2026 likezara" }
@@ -12,11 +16,29 @@ maintainers = [
     { name = "likezara", email = "contact@likezara.com" },
 ]
 keywords = ["mcp", "sudo", "encryption", "fernet", "likezara"]
-
-[project.urls]
-Funding = "https://ko-fi.com/kamaru"
-"Commercial Inquiries" = "mailto:contact@likezara.com"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Security",
+]
 dependencies = [
     "mcp>=1.27.0",
     "cryptography>=43.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/KamaruSama/mcp-sudo"
+Repository = "https://github.com/KamaruSama/mcp-sudo"
+Issues = "https://github.com/KamaruSama/mcp-sudo/issues"
+Funding = "https://ko-fi.com/kamaru"
+
+[project.scripts]
+mcp-sudo = "mcp_sudo:main"
+
+[tool.setuptools]
+py-modules = ["mcp_sudo"]

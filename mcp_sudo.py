@@ -135,5 +135,10 @@ def clear_password() -> str:
     return "No password was stored."
 
 
-if __name__ == "__main__":
+def main():
+    """Entry point for  console script."""
     mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()
