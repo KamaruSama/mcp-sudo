@@ -1,5 +1,7 @@
 # mcp-sudo
 
+<!-- mcp-name: io.github.KamaruSama/mcp-sudo -->
+
 **MCP server for running `sudo` commands with encrypted password storage.**
 
 Exposes 4 tools to persist a sudo password (encrypted with a machine-bound key) and invoke privileged commands without re-entering credentials. Designed for single-user Linux workstations.
