@@ -1,0 +1,22 @@
+[project]
+name = "mcp-sudo"
+version = "1.0.0"
+description = "MCP server for running sudo commands with encrypted password storage."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Proprietary — © 2026 likezara" }
+authors = [
+    { name = "Kamaru", email = "k.kamarux@gmail.com" },
+]
+maintainers = [
+    { name = "likezara", email = "contact@likezara.com" },
+]
+keywords = ["mcp", "sudo", "encryption", "fernet", "likezara"]
+
+[project.urls]
+Funding = "https://ko-fi.com/kamaru"
+"Commercial Inquiries" = "mailto:contact@likezara.com"
+dependencies = [
+    "mcp>=1.27.0",
+    "cryptography>=43.0.0",
+]
