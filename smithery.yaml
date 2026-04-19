@@ -1,0 +1,7 @@
+startCommand:
+  type: stdio
+  commandFunction: |-
+    (config) => ({ command: "mcp-sudo" })
+  configSchema:
+    type: object
+    properties: {}
